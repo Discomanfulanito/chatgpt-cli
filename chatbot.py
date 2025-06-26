@@ -1,5 +1,4 @@
 from openai import OpenAI
-import pyperclip
 import yaml
 import click
 from pathlib import Path
