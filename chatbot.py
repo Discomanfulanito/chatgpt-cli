@@ -34,6 +34,9 @@ def send_request():
 
     response = completion.choices[0].message.content
     print(response)
+    with open(home+"/.chat/output.md", "w") as f:
+        f.write(response)
+
 
 if __name__ == '__main__':
     send_request()
